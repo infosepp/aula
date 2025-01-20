@@ -1,4 +1,9 @@
 <?php
+/*
+ * Dieses Werk ist lizenziert unter der Creative Commons Lizenz:
+ * Namensnennung - Nicht kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International (CC BY-NC-SA 4.0).
+ * Siehe die Datei 'license.txt' für Details.
+ */
 session_start();
 require_once '../db_connect.php';   // ggf. anpassen
 require_once '../config.php';       // enthält RESERVATION_TIMEOUT usw.
