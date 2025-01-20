@@ -1,9 +1,9 @@
 <?php
 // Datenbankverbindungsdaten
-$host = 'db5017028276.hosting-data.io';
-$dbname = 'dbs13711244';
-$username = 'dbu2366982';
-$password = 'D6.snh84imG!';
+$host = '...';
+$dbname = '...';
+$username = '...';
+$password = '...!';
 
 // PDO-Verbindung zur Datenbank herstellen
 try {
