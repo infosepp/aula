@@ -1,0 +1,144 @@
+/* Minimalistisch-schlichtes Design für den öffentlichen Buchungsbereich */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #333;
+  padding: 1rem;
+}
+
+/* Seitenlayout-Beispiel: 3 Spalten
+   - Linke Spalte: Infos zum Stück
+   - Mitte: Sitzplätze
+   - Rechte Spalte: ggf. Auflistung Buchungen
+*/
+
+.layout {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Linke Spalte */
+.sidebar-left {
+  width: 250px;
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+/* Hauptbereich (Sitzplan) */
+.main-content {
+  flex: 1;
+  background-color: #fafafa;
+  padding: 1rem;
+  min-height: 400px; /* Beispiel */
+}
+
+/* Rechte Spalte */
+.sidebar-right {
+  width: 200px;
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+/* Überschriften, Abstände */
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+p, label {
+  margin-bottom: 1rem;
+}
+
+/* (Einfache) Sitzplatz-Darstellung wie in seats.php (kein SVG) */
+.seat-row {
+  margin-bottom: 1rem;
+}
+
+/* Alle "Seat" sind einfache Kästchen */
+.seat {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #00cc00; /* grün = frei */
+  margin: 2px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+/* Abweichende Farben bei Status */
+.seat.booked {
+  background-color: red;        /* gebucht */
+  cursor: not-allowed;
+}
+.seat.reserved {
+  background-color: orange;     /* reserviert von jmd. anderem */
+  cursor: not-allowed;
+}
+.seat.selected {
+  background-color: #007bff;    /* vom Nutzer ausgewählt */
+}
+
+/* Formulare (z.B. confirm.php) */
+form {
+  margin: 1rem 0;
+  max-width: 400px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"],
+form input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0056b3;
+}
+
+/* Tabelle (Buchungsauflistung, wenn gewünscht) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+table th {
+  background-color: #f8f8f8;
+}
