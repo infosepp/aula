@@ -2,7 +2,7 @@
 -- version 4.9.11
 -- https://www.phpmyadmin.net/
 --
--- Host: db5017028276.hosting-data.io
+-- Host: ...
 -- Erstellungszeit: 20. Jan 2025 um 14:56
 -- Server-Version: 8.0.36
 -- PHP-Version: 7.4.33
@@ -19,10 +19,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Datenbank: `dbs13711244`
+-- Datenbank: `...`
 --
-CREATE DATABASE IF NOT EXISTS `dbs13711244` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `dbs13711244`;
+CREATE DATABASE IF NOT EXISTS `...` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `...`;
 
 -- --------------------------------------------------------
 
